@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?> >
 
 <head>
 	<title>Garden Industry</title>
-	<meta charset="UTF-8">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="favicon.ico">
@@ -19,7 +19,7 @@
 			<div class="header__container">
 				<div class="header__logo logo">
 					<a href="#">
-						<img src="img/logo.svg" alt="logo" width="140" height="60" />
+						<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/logo.svg" alt="logo" width="140" height="60" />
 					</a>
 				</div>
 

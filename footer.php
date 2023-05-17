@@ -39,7 +39,7 @@
 							<li class="contacts__item">
 								<a href="mailto:gardenindustrysrl@gmail.com" class="contacts__linck">
 									<svg class="contacts__icon">
-										<use xlink:href="img/icons/icons.svg#email"></use>
+										<use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#email"></use>
 									</svg>
 									<span>gardenindustrysrl@gmail.com</span>
 								</a>
@@ -47,7 +47,7 @@
 							<li class="contacts__item">
 								<a href="tel:060462696" class="contacts__linck">
 									<svg class="contacts__icon">
-										<use xlink:href="img/icons/icons.svg#phone"></use>
+										<use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#phone"></use>
 									</svg>
 
 									<span>060462696</span>
@@ -56,7 +56,7 @@
 							<li class="contacts__item">
 								<a href="https://goo.gl/maps/EUyCNiTJh5enit1x8?coh=178571&entry=tt" class="contacts__linck" target="_blank">
 									<svg class="contacts__icon">
-										<use xlink:href="img/icons/icons.svg#point"></use>
+										<use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#point"></use>
 									</svg>
 
 									<span> Strada Uzinelor 11, Chișinău 2023, Молдавия </span>
@@ -70,7 +70,7 @@
 				</div>
 			</div>
 			<div class="footer__logo">
-				<img src="img/footer_logo.svg" alt="logo" />
+				<img src="<?php bloginfo( 'template_url' ); ?>/assets/img/footer_logo.svg" alt="logo" />
 			</div>
 			<div class="footer__policy">© Garden Industry 2023. Все права защищены</div>
 		</footer>

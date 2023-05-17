@@ -8,7 +8,10 @@ Template Name: home
 
 <main class="page">
     <section class="offer">
-        <picture><source srcset="img/m_modern.webp" type="image/webp"><img src="img/m_modern.jpg" alt="background image" class="offer__bg" /></picture>
+        <picture>
+            <source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/m_modern.webp" type="image/webp">
+            <img src="<?php bloginfo( 'template_url' ); ?>/assets/img/m_modern.jpg" alt="background image" class="offer__bg" />
+        </picture>
 
         <div class="offer__container">
             <div class="offer__content">
@@ -29,31 +32,31 @@ Template Name: home
     <div class="trust-triggers">
         <div class="trust-triggers__container">
             <div class="trust-triggers__item">
-                <picture><source srcset="img/safety-shield.webp" type="image/webp"><img class="trust-triggers__item-img" src="img/safety-shield.png" alt="" /></picture>
+                <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/safety-shield.webp" type="image/webp"><img class="trust-triggers__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/safety-shield.png" alt="" /></picture>
                 <p class="trust-triggers__item-body">
                     Гарантия оборудования 5 лет
                 </p>
             </div>
             <div class="trust-triggers__item">
-                <picture><source srcset="img/quality-award3.webp" type="image/webp"><img class="trust-triggers__item-img" src="img/quality-award3.png" alt="" /></picture>
+                <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/quality-award3.webp" type="image/webp"><img class="trust-triggers__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/quality-award3.png" alt="" /></picture>
                 <p class="trust-triggers__item-body">
                     Опыт работы на рынке более 9 лет
                 </p>
             </div>
             <div class="trust-triggers__item">
-                <picture><source srcset="img/thumb-up.webp" type="image/webp"><img class="trust-triggers__item-img" src="img/thumb-up.png" alt="" /></picture>
+                <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/thumb-up.webp" type="image/webp"><img class="trust-triggers__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/thumb-up.png" alt="" /></picture>
                 <p class="trust-triggers__item-body">
                     Большое количество положительных отзывов
                 </p>
             </div>
             <div class="trust-triggers__item">
-                <picture><source srcset="img/testing.webp" type="image/webp"><img class="trust-triggers__item-img" src="img/testing.png" alt="" /></picture>
+                <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/testing.webp" type="image/webp"><img class="trust-triggers__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/testing.png" alt="" /></picture>
                 <p class="trust-triggers__item-body">
                     Профессиональный подход
                 </p>
             </div>
             <div class="trust-triggers__item">
-                <picture><source srcset="img/money.webp" type="image/webp"><img class="trust-triggers__item-img" src="img/money.png" alt="" /></picture>
+                <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/money.webp" type="image/webp"><img class="trust-triggers__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/money.png" alt="" /></picture>
                 <p class="trust-triggers__item-body">
                     Комфортное ценообразование
                 </p>
@@ -101,7 +104,7 @@ Template Name: home
             <div class="services__row">
                 <article class="services__item">
                     <div class="services__img">
-                        <picture><source srcset="img/services/watering.webp" type="image/webp"><img src="img/services/watering.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
+                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/watering.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/watering.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
                     </div>
                     <h3 class="services__title">
                         Автоматический полив под ключ
@@ -117,7 +120,7 @@ Template Name: home
 
                 <article class="services__item">
                     <div class="services__img">
-                        <picture><source srcset="img/services/design.webp" type="image/webp"><img src="img/services/design.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
+                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/design.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/design.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
                     </div>
                     <h3 class="services__title">Ландшафтный дизайн</h3>
                     <ul class="services__list">
@@ -138,7 +141,7 @@ Template Name: home
 
                 <article class="services__item">
                     <div class="services__img">
-                        <picture><source srcset="img/services/lawn.webp" type="image/webp"><img src="img/services/lawn.jpg" width="250" height="350" alt="Укладка газона" /></picture>
+                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/lawn.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/lawn.jpg" width="250" height="350" alt="Укладка газона" /></picture>
                     </div>
                     <h3 class="services__title">Укладка газона</h3>
                     <ul class="services__list">
@@ -156,7 +159,7 @@ Template Name: home
 
                 <article class="services__item">
                     <div class="services__img">
-                        <picture><source srcset="img/services/plants.webp" type="image/webp"><img src="img/services/plants.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
+                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/plants.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/plants.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
                     </div>
                     <h3 class="services__title">
                         Посадка растений и деревьев
@@ -176,7 +179,7 @@ Template Name: home
 
                 <article class="services__item">
                     <div class="services__img">
-                        <picture><source srcset="img/services/landscapelight.webp" type="image/webp"><img src="img/services/landscapelight.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
+                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/landscapelight.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/landscapelight.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
                     </div>
                     <h3 class="services__title">Ландшафтное освещение</h3>
                     <ul class="services__list">
@@ -190,7 +193,7 @@ Template Name: home
 
                 <article class="services__item">
                     <div class="services__img">
-                        <picture><source srcset="img/services/tile.webp" type="image/webp"><img src="img/services/tile.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
+                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/tile.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/tile.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
                     </div>
                     <h3 class="services__title">
                         Мощение тротуарной плитки
@@ -219,7 +222,7 @@ Template Name: home
             <div class="work-scheme__content">
                 <div class="work-scheme__item">
                     <svg class="work-scheme__item-img">
-                        <use xlink:href="img/icons/icons.svg#communication"></use>
+                        <use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#communication"></use>
                     </svg>
                     <h3 class="work-scheme__item-title">Обращение к нам</h3>
                     <p class="work-scheme__item-body">
@@ -228,7 +231,7 @@ Template Name: home
                 </div>
                 <div class="work-scheme__item">
                     <svg class="work-scheme__item-img">
-                        <use xlink:href="img/icons/icons.svg#collection_info"></use>
+                        <use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#collection_info"></use>
                     </svg>
                     <h3 class="work-scheme__item-title">Сбор информации</h3>
                     <p class="work-scheme__item-body">
@@ -237,7 +240,7 @@ Template Name: home
                 </div>
                 <div class="work-scheme__item">
                     <svg class="work-scheme__item-img">
-                        <use xlink:href="img/icons/icons.svg#design"></use>
+                        <use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#design"></use>
                     </svg>
                     <h3 class="work-scheme__item-title">
                         Проект автополива
@@ -248,7 +251,7 @@ Template Name: home
                 </div>
                 <div class="work-scheme__item">
                     <svg class="work-scheme__item-img">
-                        <use xlink:href="img/icons/icons.svg#tools"></use>
+                        <use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#tools"></use>
                     </svg>
                     <h3 class="work-scheme__item-title">
                         Монтажные работы
@@ -259,7 +262,7 @@ Template Name: home
                 </div>
                 <div class="work-scheme__item">
                     <svg class="work-scheme__item-img">
-                        <use xlink:href="img/icons/icons.svg#service"></use>
+                        <use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#service"></use>
                     </svg>
                     <h3 class="work-scheme__item-title">ООбслуживание</h3>
                     <p class="work-scheme__item-body">
@@ -276,45 +279,45 @@ Template Name: home
                 НАШИ <span>РАБОТЫ</span>
             </h2>
             <div class="gallery__content" data-gallery>
-                <a class="gallery__item item-m" href="img/gallery/300.png">
-                    <picture><source srcset="img/gallery/300.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/300.png" /></picture>
+                <a class="gallery__item item-m" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/300.png">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/300.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/300.png" /></picture>
                 </a>
-                <a class="gallery__item item-s modile-d-n" href="img/gallery/236.jpg">
-                    <picture><source srcset="img/gallery/236.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/236.jpg" /></picture>
+                <a class="gallery__item item-s modile-d-n" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/236.jpg">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/236.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/236.jpg" /></picture>
                 </a>
-                <a class="gallery__item item-s" href="img/gallery/0483.jpg">
-                    <picture><source srcset="img/gallery/0483.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/0483.jpg" /></picture>
+                <a class="gallery__item item-s" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/0483.jpg">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/0483.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/0483.jpg" /></picture>
                 </a>
-                <a class="gallery__item item-m" href="img/gallery/0484.jpg">
-                    <picture><source srcset="img/gallery/0484.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/0484.jpg" /></picture>
+                <a class="gallery__item item-m" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/0484.jpg">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/0484.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/0484.jpg" /></picture>
                 </a>
-                <a class="gallery__item item-l" href="img/gallery/0690.jpg">
-                    <picture><source srcset="img/gallery/0690.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/0690.jpg" /></picture>
+                <a class="gallery__item item-l" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/0690.jpg">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/0690.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/0690.jpg" /></picture>
                 </a>
-                <a class="gallery__item item-l modile-d-n" href="img/gallery/1152.jpg">
-                    <picture><source srcset="img/gallery/1152.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/1152.jpg" /></picture>
+                <a class="gallery__item item-l modile-d-n" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/1152.jpg">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/1152.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/1152.jpg" /></picture>
                 </a>
-                <a class="gallery__item item-s modile-d-n" href="img/gallery/291.png">
-                    <picture><source srcset="img/gallery/291.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/291.png" /></picture>
+                <a class="gallery__item item-s modile-d-n" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/291.png">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/291.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/291.png" /></picture>
                 </a>
-                <a class="gallery__item item-s modile-d-n" href="img/gallery/250.png">
-                    <picture><source srcset="img/gallery/250.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/250.png" /></picture>
+                <a class="gallery__item item-s modile-d-n" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/250.png">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/250.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/250.png" /></picture>
                 </a>
-                <a class="gallery__item item-m" href="img/gallery/1663.jpg">
-                    <picture><source srcset="img/gallery/1663.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/1663.jpg" /></picture>
+                <a class="gallery__item item-m" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/1663.jpg">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/1663.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/1663.jpg" /></picture>
                 </a>
-                <a class="gallery__item item-s modile-d-n" href="img/gallery/933.png">
-                    <picture><source srcset="img/gallery/933.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/933.png" /></picture>
+                <a class="gallery__item item-s modile-d-n" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/933.png">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/933.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/933.png" /></picture>
                 </a>
-                <a class="gallery__item item-m" href="img/gallery/289.png">
-                    <picture><source srcset="img/gallery/289.webp" type="image/webp"><img class="gallery__item-img" src="img/gallery/289.png" /></picture>
+                <a class="gallery__item item-m" href="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/289.png">
+                    <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/289.webp" type="image/webp"><img class="gallery__item-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gallery/289.png" /></picture>
                 </a>
             </div>
         </div>
     </section>
 
     <section class="stock">
-        <picture><source srcset="img/gazon.webp" type="image/webp"><img class="stock__bg" src="img/gazon.jpeg" alt="bg" /></picture>
+        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/gazon.webp" type="image/webp"><img class="stock__bg" src="<?php bloginfo( 'template_url' ); ?>/assets/img/gazon.jpeg" alt="bg" /></picture>
         <div class="stock__container">
             <div class="stock__content">
                 <h2 class="stock__heading section-heading">АКЦИЯ!!!</h2>
@@ -322,7 +325,7 @@ Template Name: home
                     Только в июне первые 5 заказчиков получат Wi-Fi
                     контроллер Hunter HYDRAWISE СОВЕРШЕННО БЕСПЛАТНО!
                 </p>
-                <picture><source srcset="img/stock.webp" type="image/webp"><img class="stock__content-img" src="img/stock.png" alt="" /></picture>
+                <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/stock.webp" type="image/webp"><img class="stock__content-img" src="<?php bloginfo( 'template_url' ); ?>/assets/img/stock.png" alt="" /></picture>
             </div>
 
             <form action="" class="stock__form" id="stockForm">
@@ -426,13 +429,13 @@ Template Name: home
                 <h3 class="partners__title">Наши партнеры</h3>
                 <div class="partners__body">
                     <div class="partners__img">
-                        <picture><source srcset="img/advantages/gardena.webp" type="image/webp"><img src="img/advantages/gardena.png" alt="gardena" /></picture>
+                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/advantages/gardena.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/advantages/gardena.png" alt="gardena" /></picture>
                     </div>
                     <div class="partners__img">
-                        <picture><source srcset="img/advantages/hunter.webp" type="image/webp"><img src="img/advantages/hunter.png" alt="hunter" /></picture>
+                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/advantages/hunter.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/advantages/hunter.png" alt="hunter" /></picture>
                     </div>
                     <div class="partners__img">
-                        <picture><source srcset="img/advantages/rain.webp" type="image/webp"><img src="img/advantages/rain.png" alt="rain bird" /></picture>
+                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/advantages/rain.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/advantages/rain.png" alt="rain bird" /></picture>
                     </div>
                 </div>
             </div>
