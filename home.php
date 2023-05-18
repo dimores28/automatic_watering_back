@@ -102,114 +102,45 @@ Template Name: home
             </h2>
 
             <div class="services__row">
-                <article class="services__item">
-                    <div class="services__img">
-                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/watering.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/watering.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
-                    </div>
-                    <h3 class="services__title">
-                        Автоматический полив под ключ
-                    </h3>
-                    <ul class="services__list">
-                        <li class="services__list-item">Монтаж от 1 дня;</li>
-                        <li class="services__list-item">Гарантия 2 года;</li>
-                        <li class="services__list-item">
-                            Профессиональное проектирование
-                        </li>
-                    </ul>
-                </article>
+                <?php
+                    global $post;
 
-                <article class="services__item">
-                    <div class="services__img">
-                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/design.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/design.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
-                    </div>
-                    <h3 class="services__title">Ландшафтный дизайн</h3>
-                    <ul class="services__list">
-                        <li class="services__list-item">
-                            Настройка контроллера и форсунок;
-                        </li>
-                        <li class="services__list-item">
-                            Устранение утечек;
-                        </li>
-                        <li class="services__list-item">
-                            Ремонт насосной станции;
-                        </li>
-                        <li class="services__list-item">
-                            Консервация за зиму
-                        </li>
-                    </ul>
-                </article>
+                    $myposts = get_posts([ 
+                        'numberposts' => -1,
+                        'order'       => 'ASC',
+                        'category'    => 0
+                    ]);
 
-                <article class="services__item">
-                    <div class="services__img">
-                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/lawn.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/lawn.jpg" width="250" height="350" alt="Укладка газона" /></picture>
-                    </div>
-                    <h3 class="services__title">Укладка газона</h3>
-                    <ul class="services__list">
-                        <li class="services__list-item">
-                            Газон прямо с поля;
-                        </li>
-                        <li class="services__list-item">
-                            Правильная подготовка с песчаной подушкой;
-                        </li>
-                        <li class="services__list-item">
-                            Укладка за 1 день
-                        </li>
-                    </ul>
-                </article>
-
-                <article class="services__item">
-                    <div class="services__img">
-                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/plants.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/plants.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
-                    </div>
-                    <h3 class="services__title">
-                        Посадка растений и деревьев
-                    </h3>
-                    <ul class="services__list">
-                        <li class="services__list-item">
-                            Замена устаревших комплектующих;
-                        </li>
-                        <li class="services__list-item">
-                            Установка WiFi пультов (управление со смартфона);
-                        </li>
-                        <li class="services__list-item">
-                            Добавление зон полива
-                        </li>
-                    </ul>
-                </article>
-
-                <article class="services__item">
-                    <div class="services__img">
-                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/landscapelight.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/landscapelight.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
-                    </div>
-                    <h3 class="services__title">Ландшафтное освещение</h3>
-                    <ul class="services__list">
-                        <li class="services__list-item">Монтаж от 1 дня;</li>
-                        <li class="services__list-item">Гарантия 2 года;</li>
-                        <li class="services__list-item">
-                            Профессиональное проектирование
-                        </li>
-                    </ul>
-                </article>
-
-                <article class="services__item">
-                    <div class="services__img">
-                        <picture><source srcset="<?php bloginfo( 'template_url' ); ?>/assets/img/services/tile.webp" type="image/webp"><img src="<?php bloginfo( 'template_url' ); ?>/assets/img/services/tile.jpg" width="250" height="350" alt="Автоматический полив под ключ" /></picture>
-                    </div>
-                    <h3 class="services__title">
-                        Мощение тротуарной плитки
-                    </h3>
-                    <ul class="services__list">
-                        <li class="services__list-item">
-                            Газон прямо с поля;
-                        </li>
-                        <li class="services__list-item">
-                            Правильная подготовка с песчаной подушкой;
-                        </li>
-                        <li class="services__list-item">
-                            Укладка за 1 день
-                        </li>
-                    </ul>
-                </article>
+                    if( $myposts ){
+                        foreach( $myposts as $post ){
+                            setup_postdata( $post );
+                            ?>
+                            <article class="services__item">
+                                <div class="services__img">
+                                    <?php 
+                                        the_post_thumbnail(
+                                                array(250, 350),
+                                                array(
+                                                    'alt'   => "Service",
+                                                )
+                                            ); 
+                                    ?>
+                                </div>
+                                <h3 class="services__title">
+                                    <?php the_title(); ?>
+                                </h3>
+                                <?php the_content(); ?>
+                                <!-- <ul class="services__list">
+                                    <li class="services__list-item">Монтаж от 1 дня;</li>
+                                    <li class="services__list-item">Гарантия 2 года;</li>
+                                    <li class="services__list-item">
+                                        Профессиональное проектирование
+                                    </li>
+                                </ul> -->
+                            </article>
+                            <?php 
+                        }
+                    } wp_reset_postdata(); // Сбрасываем $post ?>
             </div>
         </div>
     </section>

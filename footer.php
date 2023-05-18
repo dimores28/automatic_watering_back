@@ -32,29 +32,31 @@
 							<button type="submit" class="btn btn-form footer__submit">
 								Отправить
 							</button>
+
+							<!-- <?php echo do_shortcode('[contact-form-7 id="39" title="Контактна форма 1"]') ?> -->
 						</form>
 					</div>
 					<div class="footer__contacts">
 						<ul class="footer__contacts_list contacts">
 							<li class="contacts__item">
-								<a href="mailto:gardenindustrysrl@gmail.com" class="contacts__linck">
+								<a href="mailto:<?php  the_field('email') ?>" class="contacts__linck">
 									<svg class="contacts__icon">
 										<use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#email"></use>
 									</svg>
-									<span>gardenindustrysrl@gmail.com</span>
+									<span><?php  the_field('email') ?></span>
 								</a>
 							</li>
 							<li class="contacts__item">
-								<a href="tel:060462696" class="contacts__linck">
+								<a href="tel:<?php  the_field('phone-number') ?>" class="contacts__linck">
 									<svg class="contacts__icon">
 										<use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#phone"></use>
 									</svg>
 
-									<span>060462696</span>
+									<span><?php  the_field('phone') ?></span>
 								</a>
 							</li>
 							<li class="contacts__item">
-								<a href="https://goo.gl/maps/EUyCNiTJh5enit1x8?coh=178571&entry=tt" class="contacts__linck" target="_blank">
+								<a href="<?php  the_field('addres-linck') ?>" class="contacts__linck" target="_blank">
 									<svg class="contacts__icon">
 										<use xlink:href="<?php bloginfo( 'template_url' ); ?>/assets/img/icons/icons.svg#point"></use>
 									</svg>
